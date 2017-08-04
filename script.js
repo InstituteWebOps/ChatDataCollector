@@ -11,12 +11,14 @@ $.get("fetch.php", function(data, status) {
 });
 
 function submittext() {
-    ($(".content").html($(".content").html() + "<div class=\"box user2\">" + $(".userinput").val() + "</div>\n"));
-    $(".content").scrollTop($(".content")[0].scrollHeight);
-    $.post("store.php", { chatID: chatID, response: $(".userinput").val() }, function(data) {
-        console.log(data);
-    });
-    showSnackBar()
+    if (!($(".userinput").val()).match(/^( )+$/) && $(".userinput").val() !== "") {
+        ($(".content").html($(".content").html() + "<div class=\"box user2\">" + $(".userinput").val() + "</div>\n"));
+        $(".content").scrollTop($(".content")[0].scrollHeight);
+        $.post("store.php", { chatID: chatID, response: $(".userinput").val() }, function(data) {
+            console.log(data);
+        });
+        showSnackBar();
+    }
     return false;
 }
 
