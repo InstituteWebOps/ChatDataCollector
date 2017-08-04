@@ -1,0 +1,18 @@
+{
+    "id": "1",
+    "name": "Georgie",
+    "chat": [
+        [
+            "user2",
+            "Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user\r\n                requests a file from it, it will be served from the server closest to them, which also leads to faster loading time."
+        ],
+        [
+            "user2",
+            "Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user\r\n                requests a file from it, it will be served from the server closest to them, which also leads to faster loading time."
+        ],
+        [
+            "user1",
+            "W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness\r\n                of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2017 by Refsnes Data. All Rights Reserved. Powered by W3.CSS."
+        ]
+    ]
+}
