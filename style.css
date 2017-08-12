@@ -1,48 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
+/* @import url('https://fonts.googleapis.com/css?family=Cabin'); */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 /*Person Name  */
 
 body {
     background-color: #eee;
+    font-family: 'Nunito', sans-serif;
 }
 
 .chatbox {
-    font-family: 'PT Sans', sans-serif;
-    /* background-color: #efefef; */
+    /* font-family: 'Cabin', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
     padding: 0px;
 }
 
 .title {
-    background-color: #fff;
+    background-color: #37474f;
     padding: 3% 20%;
     font-size: 170%;
     font-weight: 500;
+    color: white; 
+}
+
+.content {
+    overflow-y: scroll;
+    height: 60%;
+    background: #eceff1; 
+    /* background: url(bg1.jpg); */
+    padding: 2%;
+}
+.content-info{
+    background: #eceff1;
+    height: 88%; 
+    overflow-y: scroll;
+    border-width: 0 2px 0 0;
+    border-color: #37474f;
+    border-style: solid; 
+}
+
+.auto-reply-title{
+    background-color: #37474f;
+    padding: 1%;
+    font-size: 100%;
+    color: white; 
     border-width: 0 0 2px 0;
     border-color: #ccc;
     border-style: solid;
 }
 
-.content {
+.auto-reply-block{
+    background: #eceff1;
+    height:15%;
     overflow-y: scroll;
-    height: 78%;
-    background: url('bg1.jpg');
-    padding: 2%;
+    padding: 1%;
+
 }
 
-.content::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
-    border-radius: 10px;
+.auto-reply{
+    /* display: inline; */
+    border-radius: 5px;
+    background-color: #f50057;
+    color: #fff;
+    padding: 1%;
+    margin-bottom: 2px;
+}
+.auto-reply:hover{
+    background-color: #c51162;
+    border-radius: 5px;
+    border-width:2px;
+    border-color: #ccc;
+    border-style: solid;
+} 
+
+.scrollbar::-webkit-scrollbar-track
+{
+	background-color: transparent;
 }
 
-.content::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
+.scrollbar::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
 }
 
-.content::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
 }
 
 .box {
@@ -57,13 +101,12 @@ body {
 
 .user1 {
     border-radius: 0 10px 10px 10px;
-    background-color: #fff;
-    float: left;
+    background-color: #fce4ec;
 }
 
 .user2 {
     border-radius: 10px 0 10px 10px;
-    background-color: #AC1FFE;
+    background-color: #f50057;
     color: #fff;
     float: right;
 }
